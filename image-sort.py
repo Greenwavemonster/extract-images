@@ -14,7 +14,7 @@ def userIn(): # This will ask for Start / End Path + File ending + It will look 
     while (True):
         startDir = input()
         if os.path.exists(startDir):
-            print("Please enter the full Path to where you want the files to be (C:\\Users\\Greenwave\\destionation): ")
+            print("Enter the full Path to where you want the files to be (C:\\Users\\Greenwave\\destination): ")
             while (True):
                 endDir = input()
                 if os.path.exists(endDir):
