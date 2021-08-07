@@ -2,30 +2,32 @@
 
 I had a Directory full of  diffrent folders which contained images, txt-files, and more... I wanted all the images copied out into a diffrent directory but still keep the initial folder order.
 
-Somewhat like this:
+Explanation for dummys (like me):
 
-* Dir A
+* Dir A <-- **If you enter this Path and choose .jpg the Script will: ** 
    * Folder A                       
-       * Image A                         
-       * Text A
-       * Script A
-       * Image A2
+       * Image.jpg  <-- Copy this                         
+       * Text.txt   <-- Ignore this
+       * Script.py  <-- Ignore this
+       * Image.png  <-- Ignore this
+       * Folder AA  <-- Ignore this
+       * Image2.jpg <-- Copy this
 
    * Folder B                      
-       * Image B                         
-       * Script B
+       * Image.jpg <-- Copy this                        
+       * Script2.py <-- Ignore this
 
 
-The Script will then do this:
+It will Result in:
 
 
-* Dir B
+* Dir B <-- **The destination Path you choose**
    * Folder A                       
-       * Image A 
-       * Image A2                        
+       * Image.jpg
+       * Image2.jpg                       
 
    * Folder B                      
-       * Image B                         
+       * Image.jpg                       
 
 Im a beginner so its coded bit weirdly... but hey it works.
 
