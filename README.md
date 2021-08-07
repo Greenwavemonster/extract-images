@@ -2,15 +2,18 @@
 
 I had a Directory full of  diffrent folders which contained images, txt-files, and more... I wanted all the images copied out into a diffrent directory but still keep the initial folder order.
 
+It is only capable to scan one childfolder. Going deeper doesn't work (yet?).
+
 Explanation for dummys (like me):
 
-* Dir A <-- **If you enter this Path and choose .jpg the Script will: ** 
+* Dir A <-- **If you enter this Path and choose .jpg the Script will:** 
+   * Image1.jpg <-- Ignore this
    * Folder A                       
        * Image.jpg  <-- Copy this                         
        * Text.txt   <-- Ignore this
        * Script.py  <-- Ignore this
        * Image.png  <-- Ignore this
-       * Folder AA  <-- Ignore this
+       * Folder AA  <-- ***! Ignore this !***
        * Image2.jpg <-- Copy this
 
    * Folder B                      
