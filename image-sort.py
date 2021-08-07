@@ -3,9 +3,11 @@ import shutil
 from pathlib import Path
 
 # By Greenwavemonster :)
-# WIP
 
-def userIn():
+# Dont be confused by the user and image var, i used it bc I had folder that had usernames and I wanted the images out of them...
+# The freedom of choosing the Path and the endig came later...
+
+def userIn(): # Get the Paths + Validation
     global startDir
     global endDir
     global fileEnd
@@ -18,10 +20,10 @@ def userIn():
             while True:
                 endDir = input()
                 if os.path.exists(endDir):
-                    print("Enter file ending (with dot!) [.png, .jpg, .txt, .jpeg]: ")
+                    print("Enter file ending [.png, .jpg, .txt, .jpeg]: ")
                     while True:
                         fileEnd1 = input()
-                        if fileEnd1.startswith('.'):
+                        if fileEnd1.startswith('.'): 
                             fileEnd = fileEnd1
                             break
                         else:
@@ -32,8 +34,6 @@ def userIn():
             break
         print("Not a valid Path... Try again: ")
 
-
-path1 = r"C:\Users\Greenwave\PycharmProjects\instaread"
 
 def scanEndings():
     for users in os.listdir(startDir):
