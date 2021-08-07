@@ -38,7 +38,6 @@ def userIn(): # Get the Paths + Validation
 def scanEndings():
     for users in os.listdir(startDir):
         for image in Path(startDir, users).glob(fileEnd):
-            print(image)
             createFolders(users, image)
 
 
@@ -55,7 +54,8 @@ def createFolders(users, image):
 
 def moveImg(folderPath, image):
     shutil.copy(image, folderPath)
-    print("File has been Copied...")
+    print("File " + str(image) + " has been Copied...")
+
 
 
 # === START ===
