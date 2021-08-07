@@ -24,10 +24,10 @@ def userIn(): # Get the Paths + Validation
                     while True:
                         fileEnd1 = input()
                         if fileEnd1.startswith('.'): 
-                            fileEnd = fileEnd1
+                            fileEnd = '*' + fileEnd1
                             break
                         else:
-                            fileEnd = '.' + fileEnd1
+                            fileEnd = '*.' + fileEnd1
                             break
                     break
                 print("Seems not like a valid Destination... Try again: ")
