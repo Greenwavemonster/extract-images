@@ -4,6 +4,10 @@ from pathlib import Path
 
 # By Greenwavemonster :)
 
+
+# User Input Branch: Add option so user can choose start and end Dir as well as file ending
+
+
 path1 = r"C:\Users\Greenwave\PycharmProjects\instaread"
 
 def scanEndings(): # This will go into all childfolders to look for images --> .jpg is not changed
