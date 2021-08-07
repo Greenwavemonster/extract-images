@@ -1,12 +1,11 @@
 ## Python Script to extract images from a Dir to a diffrent Dir (Windows)
 
 I had a Directory full of  diffrent folders which contained images, txt-files, and more... I wanted all the images copied out into a diffrent directory but still keep the initial folder order.
-
 It is only capable to scan one childfolder. Going deeper doesn't work (yet?).
 
 Explanation for dummys (like me):
 
-* Dir A <-- **If you enter this Path and choose .jpg the Script will:** 
+* Dir A <-- **If you enter this Path and choose ".jpg" the Script will:** 
    * Image1.jpg <-- Ignore this
    * Folder A                       
        * Image.jpg  <-- Copy this                         
@@ -35,6 +34,4 @@ It will Result in:
 Im a beginner so its coded bit weirdly... but hey it works.
 
 ## What you need to do
-In order to run the Script you **will need to** open and edit the Paths since (start Dir, end Dir etc.) are Hardcoded... 
-
-Currently its set to look for .jpg images, if you want you can change that by replacing "\*.jpg" (line 11 i believe) with png or whatever.
+Run the Script. It will ask you for the Start and Destination Path as well as the file extention you wish find and copy.
