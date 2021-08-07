@@ -3,9 +3,26 @@ import shutil
 from pathlib import Path
 
 # By Greenwavemonster :)
+# WIP
 
+def userIn(): # This will ask for Start / End Path + File ending + It will look if Path is valid
+    global startDir
+    global endDir
+    global fileEnd
 
-# User Input Branch: Add option so user can choose start and end Dir as well as file ending
+    print("Enter full Path to Dir from which you want to extract files (C:\\Users\\Greenwave\\FolderX\\FolderY): ")
+    while (True):
+        startDir = input()
+        if os.path.exists(startDir):
+            print("Please enter the full Path to where you want the files to be (C:\\Users\\Greenwave\\destionation): ")
+            while (True):
+                endDir = input()
+                if os.path.exists(endDir):
+                    fileEnd = input("Enter file ending [png, jpg, txt, jpeg]: ")
+                    break
+                print("Seems not like a valid Destination... Try again: ")
+            break
+        print("Not a valid Path... Try again: ")
 
 
 path1 = r"C:\Users\Greenwave\PycharmProjects\instaread"
