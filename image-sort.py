@@ -2,20 +2,20 @@ import os
 import shutil
 from pathlib import Path
 
+# By Greenwavemonster :)
 
-path1 = r"C:\Users\Max\PycharmProjects\instaread"
+path1 = r"C:\Users\Greenwave\PycharmProjects\instaread"
 
-def scanEndings():
-    # directories = os.listdir(path1)
+def scanEndings(): # This will go into all childfolders to look for images --> .jpg is not changed
     for users in os.listdir(path1):
-        for image in Path(r'C:\Users\Max\PycharmProjects\instaread', users).glob("*.jpg"):
+        for image in Path(r'C:\Users\Greenwave\PycharmProjects\instaread', users).glob("*.jpg"):
             print(image)
             createFolders(users, image)
 
 
-def createFolders(users, image):
-    folderPath = os.path.join(r'C:\Users\Max\Desktop\projectFiles-sorted', users)
-    print(folderPath)
+def createFolders(users, image): #It will create a new folder with the same new in the new Directory (Dir should be created if not existent)
+    folderPath = os.path.join(r'C:\Users\Greenwave\Desktop\projectFiles-sorted', users)
+    #print(folderPath)
     if not os.path.exists(folderPath):
         os.makedirs(folderPath)
     else:
@@ -24,7 +24,7 @@ def createFolders(users, image):
     moveImg(folderPath, image)
 
 
-def moveImg(folderPath, image):
+def moveImg(folderPath, image): # Copys things
     shutil.copy(image, folderPath)
     print("Image has been Copied...")
 
