@@ -62,4 +62,4 @@ def moveImg(folderPath, image):
 print("=== Start ===")
 userIn()
 scanEndings()
-
+print("=== Done ===")
