@@ -13,8 +13,8 @@ def userIn(): # Get the Paths + Validation
     global fileEnd
 
     print("Enter full Path to Dir from which you want to extract files (C:\\Users\\Greenwave\\FolderX\\FolderY): ")
-    while True:
-        startDir = input()
+    while True: 
+        startDir = input() # Back then i didnt know try:exept was a thing ;)
         if os.path.exists(startDir):
             print("Enter the full Path to where you want the files to be (C:\\Users\\Greenwave\\destination): ")
             while True:
