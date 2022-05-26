@@ -45,7 +45,8 @@ And will Result in:
 
 You can type in any file extention and it should work.
 
-Im a beginner so its coded bit weirdly... but hey it works.
+Im a beginner so its coded bit weirdly... but hey it works. (back then i didnt know try:exept was a thing)
+
 
 #### Conclusion
 I hope its useful to someone :) Sorry bout that massive explanation
